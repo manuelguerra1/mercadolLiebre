@@ -35,7 +35,7 @@ header{
 
 header div.logo,
 header .form{
-    width: 50%;
+    width: 100%;
 }
 
 header div.logo{
@@ -43,17 +43,22 @@ header div.logo{
 }
 header .form{
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 2px;
+    padding: 10px;
     font-size: 11px;
 }
 header nav{
     font-size: 12px;
-    margin-left: 20px;
+    margin: 5px;
+    display: flex;
+    justify-content:space-around;
 }
 
 header ul li{
     list-style-type: none;
+    padding: 1px;
+    margin: 2px;
 }
 
 header ul li a{
@@ -63,17 +68,22 @@ header ul li a{
 
 header .form .input{
     background-color: #FFF;
-    border: 1px solid #000;
+    border: 1px solid #EAC926;
     outline: none;
     color: #666;
-    padding: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 70vw;
 }
 
 header .form .submit{
     background-color: #FFF;
-    border: 1px solid #000;
+    border: 1px solid #EAC926;
     color: #666;
-    width: 10%;
+    width: 6%;
+    padding: 2px;
+    border-radius: 5px;
+    background-color:#EAC926 ;
 }
 
 div.burger-menu{
@@ -229,12 +239,108 @@ main section article:hover{
 
 /*LOGIN*/
 
+main .login-stuff input{
+    margin: 10px;
+    padding: 4px;
+    border: 2px solid ;
+    border-radius: 5px;
+}
+
+main .login-stuff input#username{
+    background-color: #eadfa6;
+}
+
+main .login-stuff input#passw{
+    background-color: #eadfa6;
+}
+
+main .login-stuff input#send{
+    background-color: #eadfa6;
+}
+
+main .login-stuff{
+    margin: 20px;
+    text-align: center;
+}
+
 .login-btn:hover{
     background-color: #3498db;
 }
 
 /*tablet*/
 @media (min-width: 361px){
+    /* HEADER */
+
+    header div.logo{
+        padding: 10px;
+        width: 40vw;
+    }
+    header .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 17px;
+        width: 50vw;
+    }
+
+    header p{
+        font-size: 20px;
+    }
+    header nav{
+        font-size: 19px;
+        margin: 5px;
+        display: flex;
+        justify-content:space-around;
+    }
+    
+    header ul li{
+        list-style-type: none;
+        padding: 1px;
+        margin: 2px;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    header .form .input{
+        background-color: #FFF;
+        border: 1px solid #EAC926;
+        outline: none;
+        color: #666;
+        padding: 5px;
+        border-radius: 5px;
+        width: 70vw;
+    }
+    
+    header .form .submit{
+        background-color: #FFF;
+        border: 1px solid #EAC926;
+        color: #666;
+        width: 6%;
+        padding: 2px;
+        border-radius: 5px;
+        background-color:#EAC926 ;
+    }
+    
+    div.burger-menu{
+        text-align: center;
+    }
+    
+    div.burger-menu i{
+        background-color: #666;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 20px;
+        height: 40px;
+        margin: 10px 0px 20px 0px;
+        padding: 10px;
+        width: 40px;
+    }
+
+    /* MAIN */
     main section article {
         display: block;
     }
@@ -254,22 +360,163 @@ main section article:hover{
     .price,
     .discount{
         width: 50%;
+        font-size: 20px;
+    }
+
+    main section article:hover .description {
+        display: block;
+        font-size: 20px;
+    }
+
+    /* FOOTER */
+
+    footer{
+        background-color: #FFF;
+    }
+
+    .article-footer{
+        text-align: center;
+        margin: 35px 55px;
+    }
+    
+     .i-footer {
+        color: #1259c3;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    
+    .i-footer:hover{
+        color: #666;
+    }
+    
+    .align-footer{
+        text-align: center;
+    }
+    .fa-credit-card{
+        font-size: 4em;
+        text-align: center;
+    }
+    
+    .fa-gift{
+        font-size: 3em;
+        text-align: center; 
+    }
+
+    .fa-gifts{
+        font-size: 3em;
+        text-align: center; 
+    }
+    
+    .fa-user-shield{
+        font-size: 3em;
+        text-align: center; 
+    }
+    
+    .footer-title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }    
+
+    .article-footer p{
+        font-size: 15px;
+        margin: 5px;
     }
 
 }
 
 /*Desk*/
 @media (min-width: 769px){
+    /* HEADER */
+
+    header div.logo{
+        padding: 10px;
+        width: 40vw;
+    }
+    header .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 17px;
+        width: 50vw;
+    }
+
+    header p{
+        font-size: 20px;
+    }
+    header nav{
+        font-size: 15px;
+        margin: 8px;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    
+    header ul li{
+        list-style-type: none;
+        padding: 1px;
+        margin: 2px;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    header .form .input{
+        background-color: #FFF;
+        border: 1px solid #EAC926;
+        outline: none;
+        color: #666;
+        padding: 5px;
+        border-radius: 10px;
+        width: 70vw;
+
+    }
+    
+    header .form .submit{
+        background-color: #FFF;
+        border: 1px solid #EAC926;
+        color: #666;
+        width: 6%;
+        padding: 2px;
+        border-radius: 5px;
+        background-color:#EAC926 ;
+    }
+    
+    div.burger-menu{
+        text-align: center;
+    }
+    
+    div.burger-menu i{
+        background-color: #666;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 20px;
+        height: 40px;
+        margin: 10px 0px 20px 0px;
+        padding: 10px;
+        width: 40px;
+    }
+
+    /* MAIN */
+
     main section div.products article{
         width: 22%;
     }
 
+    /* FOOTER */
 
     .footer{
         display: flex;
+        justify-content: space-around;
     }
 
     .article-footer{
         width: 25vw;
+        background-color: #cbc5c5;
     }
+
+
 }
