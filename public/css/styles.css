@@ -96,7 +96,7 @@ div.burger-menu{
 }
 
 div.burger-menu i{
-    background-color: #0044AA;
+    background-color: #666;
     border-radius: 5px;
     color: #FFF;
     font-size: 20px;
@@ -202,6 +202,10 @@ main section article:hover{
 }
 
 /*FOOTER*/
+footer{
+    background-color: #fff;
+}
+
 .article-footer{
     text-align: center;
     margin: 35px 55px;
@@ -241,6 +245,45 @@ main section article:hover{
     font-weight: lighter;
 }
 
+/* REGISTRO */
+.body-register{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+.control-formulario input, select{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.create-form{
+    margin: 15px;
+    padding:20px 15px;
+}
+.control-formulario{
+    margin-bottom: 15px;   
+}
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.control{
+    width: 350px;
+    padding: 8px 8px;
+}
+.boton-formulario{
+    background-color: #1259c3;
+    border: none;
+    font-size: 20px;
+    color: #ffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 41px;
+}
+/* FIN DEL REGISTRO */
 
 /*LOGIN*/
 
@@ -253,20 +296,20 @@ main .login-stuff input{
 
 main .login-stuff input#username{
     background-color: #eadfa6;
-    padding: 6px 85px;
+    padding: 6px 50px;
     text-align: center;
 }
 
 main .login-stuff input#passw{
     background-color: #eadfa6;
-    padding: 6px 85px;
+    padding: 6px 50px;
     text-align: center;
 }
 
 main .login-stuff input#send{
     background-color: #1259c3;
     color: #fff;
-    padding: 6px 148px;
+    padding: 6px 112px;
     text-align: center;
 }
 
@@ -282,6 +325,11 @@ main .login-stuff{
 .login-btn:hover{
     background-color: #3498db;
 }
+/* FIN DEL LOGIN */
+
+/* REGISTRO */
+
+/* FIN DEL REGISTRO */
 
 /*tablet*/
 @media (min-width: 361px){
@@ -469,6 +517,10 @@ main .login-stuff{
         font-size: 3em;
         text-align: center; 
     }
+
+    .footer .article-footer i{
+        font-size: 2em;
+    }
     
     .fa-user-shield{
         font-size: 3em;
@@ -562,12 +614,58 @@ main .login-stuff{
         padding: 10px;
         width: 40px;
     }
+    /* HOME */
 
     /* MAIN */
 
     main section div.products article{
         width: 22%;
     }
+
+    /* FIN DEL HOME */
+
+    /* LOGIN */
+
+    /* MAIN */
+    main .login-stuff input{
+        margin: 10px;
+        padding: 4px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    
+    main .login-stuff input#username{
+        background-color: #eadfa6;
+        padding: 6px 95px;
+        text-align: center;
+    }
+    
+    main .login-stuff input#passw{
+        background-color: #eadfa6;
+        padding: 6px 95px;
+        text-align: center;
+    }
+    
+    main .login-stuff input#send{
+        background-color: #1259c3;
+        color: #fff;
+        padding: 6px 158px;
+        text-align: center;
+    }
+    
+    main .login-stuff label#notif{
+        text-align: left;
+    }
+    
+    main .login-stuff{
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .login-btn:hover{
+        background-color: #3498db;
+    }
+    /* FIN DEL LOGIN */
 
     /* FOOTER */
 
@@ -578,7 +676,76 @@ main .login-stuff{
 
     .article-footer{
         width: 25vw;
-        background-color: #cbc5c5;
+    }
+
+    .footer .article-footer i{
+        font-size: 2em;
+    }
+
+
+}
+
+@media (min-width: 1350px){
+    /* LOGIN */
+
+    /* MAIN */
+    main .login-stuff input{
+        margin: 10px;
+        padding: 4px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    
+    main .login-stuff input#username{
+        background-color: #eadfa6;
+        padding: 9px 170px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    main .login-stuff input#passw{
+        background-color: #eadfa6;
+        padding: 9px 170px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    main .login-stuff input#send{
+        background-color: #1259c3;
+        color: #fff;
+        padding: 9px 274px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    main .login-stuff label#notif{
+        text-align: left;
+    }
+    
+    main .login-stuff{
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .login-btn:hover{
+        background-color: #3498db;
+    }
+    /* FIN DEL LOGIN */
+
+    /* FOOTER */
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .article-footer{
+        width: 25vw;
+    }
+
+    .footer .article-footer i{
+        font-size: 2em;
     }
 
 
