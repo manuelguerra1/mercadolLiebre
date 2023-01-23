@@ -27,6 +27,7 @@ header div.top-header p{
     width: 100%;
     text-align: center;
     margin-top: 10px;
+    font-size: 18px;
 }
 
 header{
@@ -64,6 +65,10 @@ header ul li{
 header ul li a{
     text-decoration: none;
     color: #000;
+}
+
+header ul .ul-two{
+    text-decoration: underline;
 }
 
 header .form .input{
@@ -242,20 +247,31 @@ main section article:hover{
 main .login-stuff input{
     margin: 10px;
     padding: 4px;
-    border: 2px solid ;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
 main .login-stuff input#username{
     background-color: #eadfa6;
+    padding: 6px 85px;
+    text-align: center;
 }
 
 main .login-stuff input#passw{
     background-color: #eadfa6;
+    padding: 6px 85px;
+    text-align: center;
 }
 
 main .login-stuff input#send{
-    background-color: #eadfa6;
+    background-color: #1259c3;
+    color: #fff;
+    padding: 6px 148px;
+    text-align: center;
+}
+
+main .login-stuff label#notif{
+    text-align: left;
 }
 
 main .login-stuff{
@@ -270,7 +286,9 @@ main .login-stuff{
 /*tablet*/
 @media (min-width: 361px){
     /* HEADER */
-
+    header{
+        width: 100vw;
+    }
     header div.logo{
         padding: 10px;
         width: 40vw;
@@ -339,6 +357,7 @@ main .login-stuff{
         padding: 10px;
         width: 40px;
     }
+    /* HOME */
 
     /* MAIN */
     main section article {
@@ -368,6 +387,50 @@ main .login-stuff{
         font-size: 20px;
     }
 
+    /* FIN DEL HOME */
+
+    /* LOGIN */
+
+    /* MAIN */
+    main .login-stuff input{
+        margin: 10px;
+        padding: 4px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    
+    main .login-stuff input#username{
+        background-color: #eadfa6;
+        padding: 6px 65px;
+        text-align: center;
+    }
+    
+    main .login-stuff input#passw{
+        background-color: #eadfa6;
+        padding: 6px 65px;
+        text-align: center;
+    }
+    
+    main .login-stuff input#send{
+        background-color: #1259c3;
+        color: #fff;
+        padding: 6px 127px;
+        text-align: center;
+    }
+    
+    main .login-stuff label#notif{
+        text-align: left;
+    }
+    
+    main .login-stuff{
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .login-btn:hover{
+        background-color: #3498db;
+    }
+    /* FIN DEL LOGIN */
     /* FOOTER */
 
     footer{

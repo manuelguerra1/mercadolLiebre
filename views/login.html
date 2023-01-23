@@ -28,9 +28,10 @@
                     <li><a href="#">Ayuda</a></li>
                 </ul>
                 <ul>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    <div class="ul-two"><li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                        <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    </div>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
             <div class="burger-menu">
@@ -40,12 +41,16 @@
         <main class="login">
             <form action="/" method="POST">
                 <div class="login-stuff">
+                    <h3> ¡Ingresá tu nombre de usuario!</h3>
+                    <br>
                     <label for="username"><input type="text" name="user" placeholder="Nombre de usuario" id="username"></label>
                     <br>
                     <label for="passw"><input type="password" name="pass" placeholder="Elegí tu contraseña" id="passw"></label>
-                    
                     <br>
                     <label for="send"><input class="login-btn" type="submit" value="Enviar" id="send"></label>
+                    <br>
+                    <br>
+                    <label for="notif"><input type="checkbox" name="notifications" id="notif">¿Te gustaría recibir notificaciones de ofertas y productos nuevos? </label>
                     
                 </div>
                 
