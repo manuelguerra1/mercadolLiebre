@@ -71,17 +71,17 @@ header ul .ul-two{
     text-decoration: underline;
 }
 
-header .form .input{
+header .form .search .navig{
     background-color: #FFF;
     border: 1px solid #EAC926;
     outline: none;
     color: #666;
     padding: 5px;
     border-radius: 5px;
-    width: 70vw;
+    width: 45vw;
 }
 
-header .form .submit{
+header .form .srch-bttn .submit{
     background-color: #FFF;
     border: 1px solid #EAC926;
     color: #666;
@@ -283,6 +283,20 @@ footer{
     border-radius: 5px;
     margin: 41px;
 }
+
+.body-register p{
+    font-size: 18px;
+    
+}
+
+.body-register .p2{
+    text-decoration: underline;
+}
+
+.body-register .p2:hover{
+    text-decoration-color: #1259c3;
+    color: #1259c3;
+}
 /* FIN DEL REGISTRO */
 
 /*LOGIN*/
@@ -324,6 +338,19 @@ main .login-stuff{
 
 .login-btn:hover{
     background-color: #3498db;
+}
+
+.login p{
+    font-size: 18px;
+}
+
+.login .p4{
+    text-decoration: underline;
+}
+
+.login .p4:hover{
+    text-decoration-color: #1259c3;
+    color: #1259c3;
 }
 /* FIN DEL LOGIN */
 
@@ -371,17 +398,17 @@ main .login-stuff{
         color: #000;
     }
     
-    header .form .input{
+    header .form .search .navig{
         background-color: #FFF;
         border: 1px solid #EAC926;
         outline: none;
         color: #666;
         padding: 5px;
         border-radius: 5px;
-        width: 70vw;
+        width: 45vw;
     }
     
-    header .form .submit{
+    header .form .srch-bttn .submit{
         background-color: #FFF;
         border: 1px solid #EAC926;
         color: #666;
@@ -579,18 +606,17 @@ main .login-stuff{
         color: #000;
     }
     
-    header .form .input{
+    header .form .search .navig{
         background-color: #FFF;
         border: 1px solid #EAC926;
         outline: none;
         color: #666;
         padding: 5px;
-        border-radius: 10px;
-        width: 70vw;
-
+        border-radius: 5px;
+        width: 45vw;
     }
     
-    header .form .submit{
+    header .form .srch-bttn .submit{
         background-color: #FFF;
         border: 1px solid #EAC926;
         color: #666;
